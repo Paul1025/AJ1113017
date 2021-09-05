@@ -5,4 +5,28 @@
 ![2](https://user-images.githubusercontent.com/89329182/131238132-2a36a0e2-3d4b-48d2-a50b-925e9e63505d.jpg)
 ## 1-3 在TinkerCAD開一個新的Circuit, 分別使甪R, G, B三種顏色的LED, 讓LED ON, OFF的順序為R >> G >> B >> G >> R .... 無限循環.
 ![3](https://user-images.githubusercontent.com/89329182/131238229-c16305cc-f57f-4411-8ba6-a36cedeb08ee.jpg)
+### 程式碼
+````c
+void setup()
+{
+  pinMode(13, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(9, OUTPUT);
+}
 
+void loop()
+{
+  digitalWrite(13, HIGH);  
+  delay(500); 
+  digitalWrite(13, LOW);
+  delay(500);
+  digitalWrite(11, HIGH);
+  delay(500);
+  digitalWrite(11, LOW);
+  delay(500);
+  digitalWrite(9, HIGH);
+  delay(500);
+  digitalWrite(9, LOW);
+  delay(500);
+}
+````
