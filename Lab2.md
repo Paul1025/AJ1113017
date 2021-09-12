@@ -24,7 +24,6 @@ int R = 9;
 int G = 10;
 int B = 11;
 
-void setup()
 {
   pinMode(R, OUTPUT);
   pinMode(G, OUTPUT);
@@ -142,5 +141,53 @@ void loop()
    delay(10); // 10ms = 0.01s
   }  // from bright to dark
   delay(1000);
+}
+````
+## 實作2-4 analogRead(), 1024解析度 (i.e.,10-bit):
+### 可變電阻 + 序列監視器與輸出
+> 當你改變可變電阻的阻值(e.g., 10K-ohm)時，序列監視器輸出的數值有什麼改變? 數值又有什麼意義呢? 可試將你的想法寫在你的GitHub Page中喔! (互動4) (2021-09-12)
+### 電路
+![2-4](https://user-images.githubusercontent.com/89329182/132971285-5946009f-2751-482b-89a2-271d670b4c1f.png)
+### 程式碼
+````c
+int sensorValue = 0;
+
+void setup()
+{
+  pinMode(A0, INPUT);
+  Serial.begin(9600);
+
+}
+
+void loop()
+{
+  // read the input on analog pin 0:
+  sensorValue = analogRead(A0);
+  // print out the value you read:
+  Serial.println(sensorValue);
+  delay(10); // Delay a little bit to improve simulation performance
+}
+````
+### digitalRead(): 按鍵 + 序列監視器與輸出說明與介紹
+### 電路
+![2-4-1](https://user-images.githubusercontent.com/89329182/132971566-5d2eee39-1f2b-4774-a2ad-7bd9de6bea17.png)
+### 程式碼
+````c
+int buttonState = 0;
+
+void setup()
+{
+  pinMode(2, INPUT);
+  Serial.begin(9600);
+
+}
+
+void loop()
+{
+  // read the input pin
+  buttonState = digitalRead(2);
+  // print out the state of the button
+  Serial.println(buttonState);
+  delay(10); // Delay a little bit to improve simulation performance
 }
 ````
