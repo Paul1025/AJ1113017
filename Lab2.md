@@ -196,3 +196,36 @@ void loop()
 ### 可變電阻 + 序列監視器與輸出
 > 當你改變可變電阻的阻值(e.g., 10K-ohm)時，序列監視器輸出的數值有什麼改變? 數值又有什麼意義呢? 可試將你的想法寫在你的GitHub Page中喔! (互動4) (2021-09-12)
 ### 電路
+![2-4](https://user-images.githubusercontent.com/89329182/134792125-83f09942-6cc7-48ce-888b-a543b8231983.jpg)
+![22](https://user-images.githubusercontent.com/89329182/134792191-1983c7f9-110b-4b0a-a0bb-1eb999cf9c07.png)
+### 程式碼
+````c
+int buttonState = 0;
+int GLED = 13;
+int RLED = 8;
+
+void setup()
+{
+  pinMode(2, INPUT);
+  pinMode(GLED, OUTPUT); // GREEN
+  pinMode(RLED, OUTPUT); // RED    
+}
+
+void loop()
+{
+  // read the state of the pushbutton value
+  buttonState = digitalRead(2);
+  // check if pushbutton is pressed.  if it is, the
+  // buttonState is HIGH
+  if (buttonState == HIGH) {
+    // turn LED on  
+    digitalWrite(GLED, HIGH);
+    digitalWrite(RLED, LOW);    
+  } else {
+    // turn LED off    
+    digitalWrite(GLED, LOW);
+    digitalWrite(RLED, HIGH);
+  }
+  delay(10); // Delay a little bit to improve simulation performance
+}
+````
