@@ -105,9 +105,13 @@ void loop() {
 2. **同時也和之前的實作一樣, 在序列輸出.** 
 3. **另外, 當物體的距離小於150cm時, 則亮紅色LED, 否則亮綠色LED**
 ### 電路:
-
-### 程式:
+https://user-images.githubusercontent.com/89329182/137611876-72155307-8de8-4187-b5e2-cfb66e80489a.mp4
+## 程式:
 ````c
+/*
+Developed for Embedded System Course, VNU by Horace. Fall 2021
+*/
+
 #include <LiquidCrystal.h> //LCD library
   
   #define echo 7
@@ -124,17 +128,19 @@ void loop() {
   
    digitalWrite(RLED, OUTPUT);
    digitalWrite(GLED, OUTPUT);
-   Serial.begin(9600);
-   lcd.begin(16, 2);
+    
+    Serial.begin(9600);
+    lcd.begin(16, 2);
+    lcd.setCursor(0, 0);
+    lcd.print("Distance, cm: ");
+  
   }
   
-  void loop() 
-  { 
-    time_Measurement();
+  void loop() { 
+ 
+	time_Measurement();
     dd = duration * 0.01723;   
-    lcd.clear();
-    lcd.setCursor(0, 0);
-    Serial.print("Distance, cm: ");
+     
     Serial.print(dd);
     Serial.println();
     
@@ -142,21 +148,23 @@ void loop() {
     {
       digitalWrite(RLED, HIGH);
       digitalWrite(GLED, LOW); 
+      
+      lcd.setCursor(0, 1);
+      lcd.print(dd);
     }
      else
     {
       digitalWrite(RLED, LOW);
       digitalWrite(GLED, HIGH);
+      
+      lcd.setCursor(0, 1);
+      lcd.print(dd);
     }
-/*
-		待完成
-*/
-
     
-   }
+  }
   
   void time_Measurement()
-   { //function to measure the time taken by the pulse to return back
+  { //function to measure the time taken by the pulse to return back
     pinMode(trig, OUTPUT);
     digitalWrite(trig, LOW);
     delayMicroseconds(2);  
@@ -165,5 +173,5 @@ void loop() {
     digitalWrite(trig, LOW);
     pinMode(echo, INPUT);  
     duration = pulseIn(echo, HIGH);
-   }
+  }
 ````
