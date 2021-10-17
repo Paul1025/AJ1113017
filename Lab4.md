@@ -74,3 +74,29 @@ void loop()
   seg71(1, 1, 1, 1, 0, 1, 1, 1); // 9
 }
 ````
+## Lab 4-3 LCD顯示"Hello" + 你的英文名字 (e.g., "Hello Paul")
+### 電路:
+![4-3](https://user-images.githubusercontent.com/89329182/137610006-6983a0a8-18ca-4fce-a9ce-c36e96f0f94f.jpg)
+### 程式:
+````c
+// include the library code:
+#include <LiquidCrystal.h>
+
+// initialize the library with the numbers of the interface pins
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
+
+void setup() {
+  // set up the LCD's number of columns and rows:
+  lcd.begin(16, 2);
+  // Print a message to the LCD.
+  lcd.print("hello, Paul!");
+}
+
+void loop() {
+  // set the cursor to column 0, line 1
+  // (note: line 1 is the second row, since counting begins with 0):
+  lcd.setCursor(0, 1);
+  // print the number of seconds since reset:
+  lcd.print("2021/10/17");
+}
+````
