@@ -108,10 +108,6 @@ void loop() {
 
 ### 程式:
 ````c
-/*
-Developed for Embedded System Course, VNU by Horace. Fall 2021
-*/
-
 #include <LiquidCrystal.h> //LCD library
   
   #define echo 7
@@ -123,34 +119,44 @@ Developed for Embedded System Course, VNU by Horace. Fall 2021
   int GLED = 8;
   LiquidCrystal lcd(12, 11, 5, 4, 3, 2); 
 
-  void setup() {
+  void setup() 
+  {
   
-	digitalWrite(RLED, OUTPUT);
-  digitalWrite(GLED, OUTPUT);
-    
-    Serial.begin(9600);
-    lcd.begin(16, 2);
-  
+   digitalWrite(RLED, OUTPUT);
+   digitalWrite(GLED, OUTPUT);
+   Serial.begin(9600);
+   lcd.begin(16, 2);
   }
   
-  void loop() { 
- 
-		time_Measurement();
+  void loop() 
+  { 
+    time_Measurement();
     dd = duration * 0.01723;   
     lcd.clear();
     lcd.setCursor(0, 0);
     Serial.print("Distance, cm: ");
     Serial.print(dd);
     Serial.println();
+    
+    if(dd<150)
+    {
+      digitalWrite(RLED, HIGH);
+      digitalWrite(GLED, LOW); 
+    }
+     else
+    {
+      digitalWrite(RLED, LOW);
+      digitalWrite(GLED, HIGH);
+    }
 /*
 		待完成
 */
 
     
-  }
+   }
   
   void time_Measurement()
-  { //function to measure the time taken by the pulse to return back
+   { //function to measure the time taken by the pulse to return back
     pinMode(trig, OUTPUT);
     digitalWrite(trig, LOW);
     delayMicroseconds(2);  
@@ -159,5 +165,5 @@ Developed for Embedded System Course, VNU by Horace. Fall 2021
     digitalWrite(trig, LOW);
     pinMode(echo, INPUT);  
     duration = pulseIn(echo, HIGH);
-  }
+   }
 ````
