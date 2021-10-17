@@ -34,7 +34,7 @@ void loop()
 ````
 ## Lab 4-2 如下圖的Demo, 用七段顯示器, 顯示 . →1→ ... → 9 → 0 → 全滅, 狀態改變的間隔時間為0.5秒
 ### 電路:
-
+https://user-images.githubusercontent.com/89329182/137609280-1b12d1ea-66c8-42d0-94f6-8d851e13dd4a.mp4
 ### 程式:
 ````c
 void setup()
