@@ -65,7 +65,7 @@ void loop()
  } // end loop
 
 ````
-## Lab 6-2 分享一個你最喜歡的實作 (電路即可)到你的GitHub
+## Lab 6-2 分享一個你最喜歡的實作 (電路即可)到你的GitHub，測速照相
 ### 電路:
 ![002](https://user-images.githubusercontent.com/89329182/139567115-59690e01-2820-4e5b-beb5-a5d5f0321c30.jpg)
 ### 程式:
