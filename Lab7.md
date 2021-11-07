@@ -56,3 +56,6 @@ printName('Paul', 'Liang', True, 10)
 ```
 ### Task 5的結果
 ![005](https://user-images.githubusercontent.com/89329182/140632106-0d6903d6-1a7c-4790-8e40-25956d5ec55f.jpg)
+## Lab 7-3 確認Lab7完成的兩個Notebook都成功的存在你的雲端硬碟/ES2021目錄下
+![0002](https://user-images.githubusercontent.com/89329182/140632206-abbe15f2-c1c7-4938-bd6f-102500cdf2b9.jpg)
+
