@@ -10,5 +10,47 @@
 ![003](https://user-images.githubusercontent.com/89329182/140632044-50142260-97d2-4e26-b78b-3d59ac91cac3.jpg)
 ## Lab 7-2 十分鐘學會Python!? **Really?**
 ### 程式
+# task 1: string variable
+name = "Liang Paul"
+print(name)
 
+# task 2: number variable
+number = 26
+print(number)
+print(number*3)
+print(number/2)
+print(number + number)
+print(number - number)
+
+# task 3: function
+
+def printName(firstName, lastName):
+  print(lastName + ' ' + firstName)
+
+printName('Paul', 'Liang')
+
+# task 4: if else
+
+def printName(firstName, lastName, isCool):
+  if isCool:
+    print(lastName + ' ' + firstName + ' very cool!')
+  else:
+    print(lastName + ' ' + firstName + ' not cool!')
+
+# Start
+printName('Paul', 'Liang', True)
+printName('Paul', 'Liang', False)
+
+# task 5: for loop
+
+def printName(firstName, lastName, isCool, num):
+  for i in range(1, num):
+    if isCool:
+      print(i, lastName + ' ' + firstName + ' very cool!')
+    else:
+      print(i, lastName + ' ' + firstName + ' not cool!')
+
+# Start
+printName('Paul', 'Liang', True, 10)
 ### Task 5的結果
+![005](https://user-images.githubusercontent.com/89329182/140632106-0d6903d6-1a7c-4790-8e40-25956d5ec55f.jpg)
