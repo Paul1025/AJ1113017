@@ -10,7 +10,7 @@
 ![003](https://user-images.githubusercontent.com/89329182/140632044-50142260-97d2-4e26-b78b-3d59ac91cac3.jpg)
 ## Lab 7-2 十分鐘學會Python!? **Really?**
 ### 程式
-'''C
+```C
 # task 1: string variable
 name = "Liang Paul"
 print(name)
@@ -53,6 +53,6 @@ def printName(firstName, lastName, isCool, num):
 
 # Start
 printName('Paul', 'Liang', True, 10)
-'''
+```
 ### Task 5的結果
 ![005](https://user-images.githubusercontent.com/89329182/140632106-0d6903d6-1a7c-4790-8e40-25956d5ec55f.jpg)
