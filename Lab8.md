@@ -2,19 +2,6 @@
 ## 暖身: 請同學先參考Lab8-3的程式, 並將老虎的圖像在Colab中Show出來. (建議的File Name: ShowPhoto.ipynb)
 ![001](https://user-images.githubusercontent.com/89329182/141666276-f6bbbc55-3928-4215-9605-586bcc23744d.jpg)
 ## Lab 8-1 零基礎Python快速入門與實作, 1/2, W13
-### -*- coding: utf-8 -*-
-"""
-#使用Google Colab的Python零基礎快速入門教程
-Prepared by Horace, Date: October, 2021
-* Colaboratory (簡稱為「Colab」) 可讓你在瀏覽器上撰寫及執行 Python. 
-* Colab 筆記本的互動式環境，可讓你撰寫和執行程式碼
-### 介紹
-> Python 本身就是一種出色的通用編程語言，但在一些流行庫（例如: numpy、matplotlib）的幫助下，它成為了一個強大的科學計算環境。我們希望本節將作為Python 編程語言和人工智慧學習中的使用速成課程。
-### 在本教程中，我們將介紹：
-* Python必學: Basic data types (Containers, Lists, Dictionaries, Sets, Tuples), loops, flow control, Functions, Classes
-* 作圖模組 (Matplotlib): Plotting, Subplots, Images
-"""
-
 ```python
 ### P1101
 ts3 = 'Liang Paul' # Please input your English name
