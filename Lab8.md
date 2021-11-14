@@ -1,6 +1,6 @@
 # 嵌入式系統 - 實作8: 零基礎Python快速入門與實作 (W13, W14)
 ## 暖身: 請同學先參考Lab8-3的程式, 並將老虎的圖像在Colab中Show出來. (建議的File Name: ShowPhoto.ipynb)
-
+![001](https://user-images.githubusercontent.com/89329182/141666276-f6bbbc55-3928-4215-9605-586bcc23744d.jpg)
 ### Lab 8-3 建立新的Colab Notebook (e.g., Filename: ShowPhoto.ipynb), 用Python來Show一下圖像, 完成後並更新到GitHub
 ```python
 # 801
