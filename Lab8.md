@@ -17,7 +17,7 @@ Prepared by Horace, Date: October, 2021
 
 
 ### P1101
-ts3 = 'TA Grace' # Please input your English name
+ts3 = 'Liang Paul' # Please input your English name
 !python --version #  Python 版本確認
 
 """### 模組(Module)??
