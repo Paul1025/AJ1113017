@@ -15,7 +15,7 @@ Prepared by Horace, Date: October, 2021
 * 作圖模組 (Matplotlib): Plotting, Subplots, Images
 """
 
-
+```python
 ### P1101
 ts3 = 'Liang Paul' # Please input your English name
 !python --version #  Python 版本確認
@@ -394,6 +394,7 @@ for i in range(1,10,2):
 from datetime import datetime
 today = datetime.now()
 print('*** Done by %s at ' % ts3,today, type(today))
+```
 
 ### 連結 https://colab.research.google.com/drive/1iXyyUEv1VuIMWPJaDbpfPZ-aIanJZ6dB?usp=sharing
 
