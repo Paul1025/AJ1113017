@@ -1,22 +1,22 @@
 # 嵌入式系統 - 實作8: 零基礎Python快速入門與實作 (W13, W14)
 ## 暖身: 請同學先參考Lab8-3的程式, 並將老虎的圖像在Colab中Show出來. (建議的File Name: ShowPhoto.ipynb)
 ![001](https://user-images.githubusercontent.com/89329182/141666276-f6bbbc55-3928-4215-9605-586bcc23744d.jpg)
-### Lab 8-1 零基礎Python快速入門與實作, 1/2, W13
-# -*- coding: utf-8 -*-
+## Lab 8-1 零基礎Python快速入門與實作, 1/2, W13
+### -*- coding: utf-8 -*-
 """
 #使用Google Colab的Python零基礎快速入門教程
 Prepared by Horace, Date: October, 2021
 * Colaboratory (簡稱為「Colab」) 可讓你在瀏覽器上撰寫及執行 Python. 
 * Colab 筆記本的互動式環境，可讓你撰寫和執行程式碼
-## 介紹
+### 介紹
 > Python 本身就是一種出色的通用編程語言，但在一些流行庫（例如: numpy、matplotlib）的幫助下，它成為了一個強大的科學計算環境。我們希望本節將作為Python 編程語言和人工智慧學習中的使用速成課程。
-## 在本教程中，我們將介紹：
+### 在本教程中，我們將介紹：
 * Python必學: Basic data types (Containers, Lists, Dictionaries, Sets, Tuples), loops, flow control, Functions, Classes
 * 作圖模組 (Matplotlib): Plotting, Subplots, Images
 """
 
 
-# P1101
+### P1101
 ts3 = 'TA Grace' # Please input your English name
 !python --version #  Python 版本確認
 
@@ -24,7 +24,7 @@ ts3 = 'TA Grace' # Please input your English name
 > 模組(Module)就是一個檔案，包含了相關性較高的程式碼。隨著應用程式的開發規模越來越大，我們不可能把所有的程式碼都寫在同一份Python檔案中，一定會將關聯性較高的程式碼抽出來放在不同的檔案中來形成模組(Module)，主程式再透過引用的方式來使用。所以模組(Module)可以提高程式碼的重用性(Reusable)且易於維護。
 """
 
-# P1102 載入Python calendar模組, 輸出月曆
+### P1102 載入Python calendar模組, 輸出月曆
 import calendar
 print(calendar.calendar(2021))
 
@@ -32,7 +32,7 @@ print(calendar.calendar(2021))
 
 print(calendar.calendar(2022))
 
-# P1103
+### P1103
 from math import pi
 print(pi)
 print('pi= ', pi)
@@ -41,7 +41,7 @@ print('pi= %.3f' % pi)
 print('pi= %.2f' % pi)
 print('pi= %d' % pi)
 
-# P1104
+### P1104
 print('學AI真是太酷了!!') #print顯示的內容必須是字串或是變數
 
 """###Basics of Python
@@ -51,17 +51,17 @@ print('學AI真是太酷了!!') #print顯示的內容必須是字串或是變數
 ####Numbers
 """
 
-# P1105
+### P1105
 x = 3
 print(x, x+x, x*x)
 
-# P1106
+### P1106
 print(x + 1)   # 加法,Addition
 print(x - 1)   # 減法,Subtraction
 print(x * 2)   # 乘法,Multiplication
 print(x ** 2)  # 指數,Exponentiation (3*3=9)
 
-# P1107
+### P1107
 print(x % 2)   # 取餘數, 3%2=1, 5%3=2
 print(x/2)     # 除法
 print(x//2)     # 整數除法
@@ -76,7 +76,7 @@ b = 2**10
 print(x, y, z, a, b)
 print('x=%d, y=%d, z=%d, a=%d, b=%d' % (x, y, z, a, b))
 
-# P1108
+### P1108
 x = 2
 x += 1 # x = x + 1
 print(x)
@@ -104,7 +104,7 @@ print('x *= 2, x=?', x)
 [重要] python變數:區分大小寫、不可以數字開頭!!
 """
 
-# P1110
+### P1110
 y = 2.5
 print(type(y)) # Show data type by "type()"
 print(y, y + 1, y * 2, y ** 2) # Easy calculation
@@ -122,15 +122,15 @@ print('z=hello, typ=?', type(z))
 
 """### 變數不能使用指令/關鍵字/數字開頭: Python的保留字有哪些? 直接問python吧!"""
 
-# P1112A
+### P1112A
 import keyword
 print(keyword.kwlist,end='')
 
-# P1112B
+### P1112B
 and = 1
 print(and)
 
-# P1113 常用輸入輸出
+### P1113 常用輸入輸出
 id ="A1234567"
 name = input("請輸入姓名") #可加註解
 print("Hello ~ ",id+name)
@@ -139,7 +139,7 @@ print("Hello ~ ",id+name)
 比較運算符號 包括 <、<=、>、>=、==、!=
 """
 
-# P1114 if判斷很常用，條件成立才執行
+### P1114 if判斷很常用，條件成立才執行
 
 x = 7
 check = (x >= 5)
@@ -169,7 +169,7 @@ if 0:  #在python世界裡 1不只是1，還具有 True、真、成立
 else:
     print(False) #0不只是0，還具有 False、偽、不成立
 
-# P1114a
+### P1114a
 a = 33
 b = 200
 if b > a:
@@ -188,7 +188,7 @@ else:
 Python implements all of the usual operators for Boolean logic, but uses English words rather than symbols (`&&`, `||`, etc.):
 """
 
-# P1115
+### P1115
 print("***** 布林邏輯 *****")
 one = 1
 two = 2
@@ -198,7 +198,7 @@ print('one > 0: ', one > 0)
 print('two > one:',two > one)
 print('three < one:', three < one)
 
-# P1116
+### P1116
 t = True
 f = False
 print(t and f) # Logical AND;
@@ -219,7 +219,7 @@ print("ans1 = %s, ans2 = %s, ans3 = %s, ans4 = %s" % (ans1, ans2, ans3, ans4), '
 ans5 = ans2 and ans4
 print('ans2 and ans4 = ans5:', ans2, ans4, ans5)
 
-# P1117
+### P1117
 f = 3
 g = 3.0000 
 if f=g: #判斷要使用==
@@ -237,7 +237,7 @@ else:
 
 """####字串(Strings)"""
 
-# P1118
+### P1118
 hello = '**hello** '   # String literals can use single quotes
 world = "++world++"   # or double quotes; it does not matter
 print(hello, len(hello))
@@ -246,7 +246,7 @@ print(world, len(world))
 hh = 'hello world'
 print('hello world', len(hh))
 
-# P1119
+### P1119
 
 hw = hello + world  # 字符串連接 (String concatenation)
 print(hw)
@@ -256,7 +256,7 @@ print(hw)
 
 print('%s %s' % (hello, world))
 
-# P1120
+### P1120
 hw12 = '{} {} {}'.format(hello, world, 12)  # string formatting
 print(hw12)
 
@@ -274,7 +274,7 @@ print(hw13)
 
 """String objects have a bunch of useful methods; for example:"""
 
-# P1121
+### P1121
 s1 = 'hello'
 s2 = '  world '
 print(s1.capitalize())  # 將字符串大寫
@@ -299,7 +299,7 @@ print(s13, s13.replace('#####',' '))
 列表(List)是數組的 Python 等價物，但可以調整大小並且可以包含不同類型的元素：
 """
 
-# P1122
+### P1122
 xs = [3, 2, 1]   # 創立一個List
 print(xs)
 print(xs[2])
@@ -321,11 +321,11 @@ print(ss[4])
 
 print('Size =?, Ans:', len(ss))
 
-# for idx, animal in enumerate(animals):
+### for idx, animal in enumerate(animals):
 for box_number, box_content in enumerate(ss):
   print(box_number, box_content)
 
-# P1123
+### P1123
 xs = [10, 20, 30, 40, 50] 
 xs[2] = 'cat'    # 列表可以包含不同類型的元素
 print(xs)
@@ -334,7 +334,7 @@ print(xs)
 xs[2]='dog'
 print(xs)
 
-# P1124
+### P1124
 xs.append('fish') # 在列表末尾添加一個新元素
 print(xs)  
 print(len(xs))
@@ -345,7 +345,7 @@ xs.append('bird') # 在列表末尾添加一個新元素
 print(xs)  
 print(len(xs))
 
-# P1125
+### P1125
 x = xs.pop()     # 刪除並返回列表的最後一個元素
 print(x, xs)
 
@@ -355,10 +355,10 @@ print(x, xs)
 
 """####Slicing: Python 還提供了簡潔的語法來訪問子列表； 這稱為切片："""
 
-# P1126
+### P1126
 print(len('hello'))
 
-# P1127
+### P1127
 nums = 'hello'
 print(nums, len(nums))         
 print('nums[2:4] >>',nums[2:4])    
@@ -395,7 +395,7 @@ from datetime import datetime
 today = datetime.now()
 print('*** Done by %s at ' % ts3,today, type(today))
 
-### Lab 8-3 建立新的Colab Notebook (e.g., Filename: ShowPhoto.ipynb), 用Python來Show一下圖像, 完成後並更新到GitHub
+## Lab 8-3 建立新的Colab Notebook (e.g., Filename: ShowPhoto.ipynb), 用Python來Show一下圖像, 完成後並更新到GitHub
 ```python
 # 801
 import tensorflow as tf
