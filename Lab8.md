@@ -722,7 +722,7 @@ from datetime import datetime
 today = datetime.now()
 print('*** Done by %s at ' % ts3,today, type(today))
 ```
-
+### 連結 https://colab.research.google.com/drive/1aG5v3yQAVqZUC7q0aZi06axyLN_FK8ap#scrollTo=GtHOZpHkhCz7
 ## Lab 8-3 建立新的Colab Notebook (e.g., Filename: ShowPhoto.ipynb), 用Python來Show一下圖像, 完成後並更新到GitHub
 ```python
 # 801
