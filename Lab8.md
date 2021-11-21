@@ -844,4 +844,5 @@ print('*** Done by %s at ' % ts3,today, type(today))
 
 # 你的程式
 ```
+![image](https://user-images.githubusercontent.com/89329182/142748557-43c2ff02-b152-4f1d-a708-c191fe2acbae.png)
 ### 連結 https://colab.research.google.com/drive/1swAvhHTWw_1SrInC3aIUFRdzQztjynbs?usp=sharing
