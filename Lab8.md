@@ -386,7 +386,7 @@ print('*** Done by %s at ' % ts3,today, type(today))
 ## Lab 8-2 零基礎Python快速入門與實作, 2/2, W14
 ```python
 # P1101
-ts3 = 'TA Grace' # Please input your English name
+ts3 = 'Liang Paul' # Please input your English name
 !python --version #  Python 版本確認
 
 
