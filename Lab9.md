@@ -198,4 +198,4 @@ for i, item in enumerate(top_5):
 
 show_image(image, '')
 ````
-![image](https://user-images.githubusercontent.com/89329219/143728747-1deb553c-c260-4261-8731-f6a66bfeafdd.png)
+![001](https://user-images.githubusercontent.com/89329182/143730785-2e3bf0b9-aff5-4d37-9d10-1b255a69f5bf.jpg)
