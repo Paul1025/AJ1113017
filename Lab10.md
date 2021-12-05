@@ -227,3 +227,6 @@ cv2.putText(image, ('Paul'), (x+50, y-50), cv2.FONT_HERSHEY_SIMPLEX,
     3, (0, 255, 255), 5, cv2.LINE_AA)
 plt.imshow(image)
 ```
+### 結果
+![004](https://user-images.githubusercontent.com/89329182/144733187-626d032f-f69e-49e5-9b6b-59ffab6647d0.jpg)
+
