@@ -102,6 +102,7 @@ cv2.line(img, (0, 0), (255, 255), (255, 0, 255), 5)
 cv2.line(img, (0, 255), (255, 0), (255, 0, 255), 5)
 # 顯示圖片
 cv2_imshow(img)
-```![002](https://user-images.githubusercontent.com/89329182/144732497-7724fdc9-1666-448b-84c9-0516ca1d8be0.jpg)
+```
+![002](https://user-images.githubusercontent.com/89329182/144732497-7724fdc9-1666-448b-84c9-0516ca1d8be0.jpg)
 ###　連結https://colab.research.google.com/drive/1l1Ebszd3PKyK2ygVLf0Bwb-GHAIMIwju#scrollTo=mJKLkKCLpFg-
 
